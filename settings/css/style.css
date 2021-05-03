@@ -1,0 +1,247 @@
+/* Common variables */
+:root {
+    --pf: 'Source Sans Pro', sans-serif;
+    --transition: all .5s;
+  }
+  /* Color Theme Variables */
+  .light, body[color-theme="light"] {
+    --bg: #f0f8ff;
+    --bg-light: rgba(255, 255, 255, .8);
+    --clr-text: #182227;
+    --clr-text-light: #182227bb;
+    --clr-element: #34506e;
+    --clr-element-hover: #34506ebb;
+    --clr-shadow: rgba(0, 0, 0, .15);
+  }
+  .dark, body[color-theme="dark"] {
+    --bg: #1e1e1e;
+    --bg-light: rgba(255, 255, 255, .15);
+    --clr-text: #FCE8Ec;
+    --clr-text-light: #FCE8Ecbb;
+    --clr-element: #58a6ff;
+    --clr-element-hover: #58a6ff;
+    --clr-shadow: rgba(0, 0, 0, .2);
+  }
+  .solarized, body[color-theme="solarized"] {
+    --bg: #002b36;
+    --bg-light: rgba(255, 255, 255, .15);
+    --clr-text: #fdf6e3;
+    --clr-text-light: #fdf6e3bb;
+    --clr-element: #93a1a1;
+    --clr-element-hover: #93a1a1bb;
+    --clr-shadow: rgba(0, 0, 0, .2);
+  }
+  .pt, body[color-theme="pt"] {
+    --bg: #fbe3e8;
+    --bg-light: rgba(255, 255, 255, .8);
+    --clr-text: #4c4c4c;
+    --clr-text-light: #4c4c4c;
+    --clr-element: #5cbdb9;
+    --clr-element-hover: #5cbdb9bb;
+    --clr-shadow: rgba(0, 0, 0, .15);
+  }
+  .blue, body[color-theme="blue"] {
+    --bg: #0b3393;
+    --bg-light: #5f8eff73;
+    --clr-text: #bed7ff;
+    --clr-text-light: #bed7ffdd;
+    --clr-element: #7ebcff;
+    --clr-element-hover: #7ebcffbb;
+    --clr-shadow: rgba(0, 0, 0, .15);
+  }
+  .yp, body[color-theme="yp"] {
+    --bg: #fceed1;
+    --bg-light: rgba(255, 255, 255, .8);
+    --clr-text: #4c4c4c;
+    --clr-text-light: #4c4c4c;
+    --clr-element: #7d3cff;
+    --clr-element-hover: #7d3cffbb;
+    --clr-shadow: rgba(0, 0, 0, .15);
+  }
+  /* Add trantition to every elements */
+  * {
+    transition: var(--transition);
+  }
+  body {
+    background: var(--bg);
+    font-family: var(--pf);
+    transition: var(--transition);
+    border-bottom: 10px solid var(--clr-element);
+  }
+  
+  /* header */
+  .dd-header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dd-logo {
+    font-family: var(--pf);
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--clr-text);
+    font-size: 1.7rem;
+  }
+  .menu {
+    list-style: none;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .menu li a {
+    font-family: var(--pf);
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--clr-text);
+    transition: var(--transition);
+  }
+  .menu li a:hover {
+    color: var(--clr-element);
+  }
+  
+  /* Typography */
+  .title {
+    font-family: var(--pf);
+    color: var(--clr-text);
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  .p-text {
+    font-family: var(--pf);
+    color: var(--clr-text-light);
+  }
+  .box-lbl {
+    font-family: var(--pf);
+    font-weight: 600;
+    color: var(--clr-text);
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .theme--label {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--clr-element);
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .theme--label span {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin-right: 10px;
+  }
+  .theme--label[dd-theme="solarized"] span {
+    background: #002b36;
+  }
+  .theme--label[dd-theme="pt"] span {
+    background: #5cbdb9;
+  }
+  .theme--label[dd-theme="blue"] span {
+    background: #7ebcff;
+  }
+  .theme--label[dd-theme="yp"] span {
+    background: #7d3cff;
+  }
+  .theme--label[dd-theme].active {
+    color: var(--bg);
+    background: var(--clr-element);
+  }
+  .theme--label[dd-theme].active span { background: var(--bg); }
+  
+  .box {
+    padding: 2rem;
+    border: 2px solid var(--clr-element);
+    border-radius: 5px;
+    color: var(--clr-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    background: var(--bg-light);
+    box-shadow: 0 2px 10px var(--clr-shadow);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .2s;
+  }
+  .card__title {
+    position: relative;
+    font-family: var(--pf);
+    font-weight: 800;
+    color: var(--clr-text-light);
+  }
+  
+  .dd-form {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 550px;
+    width: 100%;
+    margin: 2rem auto;
+    background: var(--clr-shadow);
+    padding: 3rem;
+    border-radius: 4px;
+  }
+  .form-input {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    color: var(--clr-text);
+    background: var(--bg-light);
+    box-shadow: 0 0 0 2px transparent;
+    border: 0;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: var(--transition);
+    outline: none;
+  }
+  .form-input:focus {
+    box-shadow: 0 0 0 2px var(--clr-element);
+  }
+  .form-btn {
+    position: relative;
+    display: inline-block;
+    background: var(--clr-element);
+    color: var(--bg) !important;
+    padding: 1rem 4rem;
+    border: 0;
+    border-radius: 4px;
+    font-family: var(--pf);
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .form-btn:hover {
+    background: var(--clr-element-hover);
+  }
+  
+  /* Theme settings */
+  .dd-icon {
+    stroke: var(--clr-text);
+  }
+  .dd-theme__switcher {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .dd-theme__switcher .dd-theme__switcher-btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    top: 0;
+  }
+  body.light .dd-theme__switcher .dd-theme__switcher-btn {
+    top: -24px;
+  }

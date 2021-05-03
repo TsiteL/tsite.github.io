@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        test room
+    </title>
+    <link rel="stylesheet" type="text/css" href="room.css" media="screen"/>
+</head>
+<body>
+    <script type="text/javascript" src="../ts/index.js"></script>
+    <div class="back">
+        <img src="../img/doge.jpg" id="dogeMain1" width="50" height="50" onclick="goMain()">
+    </div>
+    <p><span id="show_name"></span></p>
+    <div class="main">
+        <div class="main_name">
+            <p id="rooomname"></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const url = new URL (location.href);
+    const roomname = url.searchParams.get("rname");
+    document.getElementById("rooomname").innerHTML = roomname;
+    </script>
+</body>

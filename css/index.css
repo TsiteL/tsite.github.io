@@ -1,0 +1,97 @@
+body {
+    background-color: #0b0e11;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.logo {
+    top: 5px;
+    float: left;
+}
+.searchdiv {
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* css - border: [color] [size] [solid, doted, dashed] */
+#search {
+    border: blue 3px solid;
+}
+#ssearch {
+    border: blue 3px solid;
+}
+.settings {
+    text-align:left;
+    float: left;
+    margin-top: 30px;
+    margin-left: -56px;
+}
+#settingi {
+    border:blue 3px solid;
+    float: left;
+}
+#dogeMain {
+    border: blue 3px solid
+}
+.newroom {
+    float: right;
+    
+    margin-top: 1px;
+}
+#new {
+    color: white;
+    background-color: red;
+    border: blue 3px solid;
+}
+#modal {
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-shadow: 0 1px 0 black;
+}
+#modal > div {
+    width: 30%;
+    padding: 30px;
+    background-color: #151a21;
+    margin: 80px auto 0 auto;
+    text-align: left;
+    box-shadow: 0 0 40px #505050;
+    border-radius: 10px;
+    color: #e0e0e0;
+}
+#modal input {
+    background-color: #242c37;
+    border-radius: 3px;
+    border: #404040 solid 1px;
+    padding: 5px;
+    color: #586b88;
+    outline: none;
+}
+#modal input.error {
+    border:red 2px solid;
+}
+#modal input:hover {
+    background-color: #2a323c;
+}
+#modal input[type="submit"] {
+    font-weight: bold;
+    background-color: #343c47;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .5)
+}
+#modal input[type="submit"]:hover {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .7)
+}
+#modal p {
+    color: #495a72;
+}
+.close {
+    float: right;
+    background: none;
+    color: white;
+    border: none;
+    font-size: x-large;
+}

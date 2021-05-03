@@ -1,0 +1,14 @@
+body {
+    background-color: #0b0e11;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.back {
+    top: 5px;
+    float: left;
+}
+/*css - border: blue 3px solid*/
+#dogeMain1 {
+    border: blue 3px solid; 
+}
