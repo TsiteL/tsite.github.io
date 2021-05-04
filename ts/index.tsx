@@ -30,7 +30,8 @@ function makeNewRoom() {
         rdsc.className += " error"
         return;
     }
-    location.href = "http://tsitel.github.io/tsite.github.io/room_design/room.html?id=12345&rname=" + rnam.value;
+    const id = Math.floor(Math.random() * 1000000);
+    location.href = "http://tsitel.github.io/tsite.github.io/room_design/room.html?rname=" + rnam.value + "&id=" + id;
 
 }
 
