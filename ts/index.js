@@ -3,12 +3,12 @@
 var light_mode = false;
 // Functions
 function goMain() {
-    location.href = "file:///C:/Users/user/Desktop/Html/Tsite/index.html";
+    location.href = "http://tsitel.github.io/index.html";
 }
 function search() {
 }
 function goto_settings() {
-    var set_url = 'file:///C:/Users/user/Desktop/Html/Tsite/settings/index.html';
+    var set_url = 'http://tsitel.github.io/settings/index.html';
     window.open(set_url, '_blank');
 }
 function openNewRoomDialog() {
@@ -28,5 +28,5 @@ function makeNewRoom() {
         rdsc.className += " error";
         return;
     }
-    location.href = "file:///C:/Users/user/Desktop/Html/Tsite/room_design/room.html?id=12345&rname=" + rnam.value;
+    location.href = "http://tsitel.github.io/room_design/room.html?id=12345&rname=" + rnam.value;
 }
