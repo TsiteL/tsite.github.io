@@ -3,5 +3,46 @@
 }
 /*css - border: blue 3px solid*/
 #dogeMain1 {
-    border: blue 3px solid; 
+    border: blue 3px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main {
+    border: #1e1e1e 5px solid;
+    border-radius: 5px;
+    background-color: #151a21;
+}
+#speakers {
+    margin: 10px;
+    padding: 20px;
+    min-height: 50%;
+    background: #1e1e1e;
+    border-radius: 5px;
+}
+#speakers div {
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: #242c37;
+    float: left;
+    border-radius: 3px;
+}
+#controls {
+    padding: 10px;
+}
+#controls button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    border: 0 none;
+    outline: 0 none;
+}
+#button-leave {
+    float: right;
+}
+.clear { clear: both }
+.main_name {
+    padding-left: 10px;
 }

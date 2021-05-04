@@ -6,6 +6,7 @@ function search() {
 
 }
 function goto_settings() {
+    
     var set_url = 'http://tsitel.github.io/tsite.github.io/settings/index.html';
     window.open(set_url, '_blank');
 }
