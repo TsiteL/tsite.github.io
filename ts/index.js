@@ -1,6 +1,3 @@
-// Inports
-// Variables
-var light_mode = false;
 // Functions
 function goMain() {
     location.href = "http://tsitel.github.io/tsite.github.io/index.html";
@@ -28,6 +25,6 @@ function makeNewRoom() {
         rdsc.className += " error";
         return;
     }
-    var id = Math.floor(Math.random() * 1000000);
+    var id = Math.floor(Math.random() * 1000000000000);
     location.href = "http://tsitel.github.io/tsite.github.io/room_design/room.html?rname=" + rnam.value + "&id=" + id;
 }
