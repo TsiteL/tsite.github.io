@@ -35,6 +35,7 @@ function mute() {
 function deafen() {
 }
 function invite() {
+    location.href = "http://tsitel.github.io/tsite.github.io/room_design/invite.html";
 }
 function rsettings() {
 }
