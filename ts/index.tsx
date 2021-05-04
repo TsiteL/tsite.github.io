@@ -41,10 +41,11 @@ function deafen() {
 
 }
 function invite() {
+
     const url = new URL (location.href);
     const id = url.searchParams.get("id");
-    const rnam = document.getElementById("rname") as HTMLInputElement;
-    location.href = "http://tsitel.github.io/tsite.github.io/room_design/invite.html?rname" + rnam.value + "&id=" + id;
+    const rnam = url.searchParams.get("rname");
+    location.href = "http://tsitel.github.io/tsite.github.io/room_design/invite.html?rname" + rnam + "&id=" + id;
 }
 function rsettings() {
 

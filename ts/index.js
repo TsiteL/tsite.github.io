@@ -37,8 +37,8 @@ function deafen() {
 function invite() {
     var url = new URL(location.href);
     var id = url.searchParams.get("id");
-    var rnam = document.getElementById("rname");
-    location.href = "http://tsitel.github.io/tsite.github.io/room_design/invite.html?rname" + rnam.value + "&id=" + id;
+    var rnam = url.searchParams.get("rname");
+    location.href = "http://tsitel.github.io/tsite.github.io/room_design/invite.html?rname" + rnam + "&id=" + id;
 }
 function rsettings() {
 }
