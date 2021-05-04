@@ -14,14 +14,16 @@
     <p><span id="show_name"></span></p>
     <div class="main">
         <div class="main_name">
-            <p id="rooomname"></p>
-            <p id="id"></p>
+            <p id="rooomname"></p><p id="iurl">Share room link: </p>
+            <p id="id">ID: </p>
         </div>
     </div>
     <script type="text/javascript">
     const url = new URL (location.href);
     const roomname = url.searchParams.get("rname");
     const id = url.searchParams.get("id");
+    const url1 = url.toString();
+    document.getElementById("iurl").innerHTML = url1;
     document.getElementById("rooomname").innerHTML = roomname;
     document.getElementById("id").innerHTML = id;
     </script>
