@@ -41,7 +41,7 @@ function invite() {
     var url = new URL(location.href);
     var id = url.searchParams.get("id");
     var rnam = url.searchParams.get("rname");
-    location.href = "http://tsitel.github.io/tsite.github.io/client/room_design/room.html?rname&id=" + id;
+    location.href = "http://tsitel.github.io/tsite.github.io/client/room_design/invite.html?rname&id=" + id;
 }
 function rsettings() {
 }
